@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  background: url(https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80) center center no-repeat;
+  background-size: cover;
+}
+
+#drumset {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2px;
+}
+
+.button {
+  width: 8vw;
+  height: 8vh;
+  padding: 0 5px;
+  cursor: url("custom.gif"), grabbing;
+  background-color: transparent;
+  color: #6FCBFF;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 1.5em;
+  transition: .7s ease all;
+  border: 3px solid #15A9FD;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #15A9FD;
+  color: #FFF;
+}
+
+.playing {
+  background-color: #00BDFF;
+  outline-color: white;
+  transform: scale(1.1);
+}
